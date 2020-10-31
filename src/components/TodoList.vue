@@ -9,7 +9,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr v-for="todo in todo" v-bind:key="todo.id">
+    <tr v-for="todo in todos" v-bind:key="todo.id">
       <td>{{ todo.id }}</td>
       <td>{{ todo.comment }}</td>
       <td class="state">
@@ -25,12 +25,8 @@
 
 <script>
 export default {
+  props: ["todos"],
   name: 'TodoList',
-  data() {
-    return {
-      todos: []
-    }
-  }
 }
 </script>
 
