@@ -1,9 +1,9 @@
 <template>
-<div id="app">
-  <img src="./assets/logo.png">
-  <Form :todos="todos" />
-  <TodoList :todos="todos" />
-</div>
+  <div id="app">
+    <img src="./assets/logo.png">
+    <Form :todos="todos" />
+    <TodoList :todos="todos" />
+  </div>
 </template>
 
 <script>
@@ -25,7 +25,7 @@ export default {
         // {
         //   id: 1,
         //   comment: '1コメ！',
-        //   state: '未完了'
+        //   state: 0
         // }
       ]
     }

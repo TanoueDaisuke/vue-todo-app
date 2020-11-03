@@ -6,7 +6,7 @@ var todoStorage = {
       localStorage.getItem(STORAGE_KEY) || '[]'
     )
     todos.forEach(function(todo, index) {
-      todo.id = index
+      todo.id = index + 1 //デフォだと0
     })
     todoStorage.uid = todos.length + 1 // デフォでは0になっているので
     return todos
